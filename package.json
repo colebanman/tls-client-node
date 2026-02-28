@@ -9,6 +9,9 @@
   ],
   "scripts": {
     "build": "tsc",
+    "test": "vitest run",
+    "test:unit": "vitest run test/unit",
+    "test:integration": "vitest run test/integration",
     "prepublishOnly": "npm run build"
   },
   "repository": {
@@ -29,6 +32,12 @@
   "homepage": "https://github.com/colebanman/tls-client-node#readme",
   "devDependencies": {
     "@types/node": "^25.3.3",
-    "typescript": "^5.9.3"
+    "@types/tough-cookie": "^4.0.5",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "dependencies": {
+    "koffi": "^2.15.1",
+    "tough-cookie": "^6.0.0"
   }
 }
