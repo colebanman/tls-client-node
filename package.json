@@ -1,0 +1,34 @@
+{
+  "name": "tls-client-node",
+  "version": "0.1.0",
+  "description": "TLS client for Node.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colebanman/tls-client-node.git"
+  },
+  "keywords": [
+    "tls",
+    "client",
+    "http",
+    "fingerprint"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colebanman/tls-client-node/issues"
+  },
+  "homepage": "https://github.com/colebanman/tls-client-node#readme",
+  "devDependencies": {
+    "@types/node": "^25.3.3",
+    "typescript": "^5.9.3"
+  }
+}
