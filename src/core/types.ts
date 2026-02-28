@@ -78,6 +78,7 @@ export interface CustomTlsClient {
 
 export interface TlsFingerprintOptions {
   clientIdentifier?: TlsClientIdentifier;
+  customTlsClient?: CustomTlsClient;
   randomTlsExtensionOrder?: boolean;
   forceHttp1?: boolean;
   disableHttp3?: boolean;

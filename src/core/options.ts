@@ -103,7 +103,7 @@ export const normalizeOptions = (
     hooks,
     pagination,
     tls,
-    customTlsClient: merged.customTlsClient,
+    customTlsClient: merged.customTlsClient ?? merged.tls?.customTlsClient,
     session,
   };
 };
